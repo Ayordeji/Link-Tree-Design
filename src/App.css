@@ -1,0 +1,149 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.share {
+  position: absolute;
+  right: 300px;
+}
+
+.share-mobile {
+  display: none;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social img {
+  padding: 10px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-bottom: 28px;
+}
+
+.profile h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  display: block;
+  margin: 24px 0;
+  padding: 24px 35px 24px 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #101828;
+  background-color: #eaecf0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.links a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+hr {
+  margin-top: 100px;
+  color: #667085;
+}
+
+.kodecamp-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kodecamp-logos p {
+  font-size: 17px;
+  margin-left: 100px;
+
+  color: #667085;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 631px) and (max-width: 768px) {
+  .share {
+    right: 200px;
+  }
+
+  .profile h1 {
+    font-size: 24px;
+  }
+
+  .kodecamp-logos p {
+    margin-left: -100px;
+  }
+
+  .kodecamp-logos .special {
+    width: 40%;
+  }
+
+  .kodecamp-logos img {
+    width: 30%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 630px) {
+  .share {
+    display: none;
+  }
+
+  .kodecamp-logos img {
+    width: 40%;
+  }
+
+  .kodecamp-logos .special {
+    width: 40%;
+  }
+
+  .kodecamp-logos {
+    flex-direction: column;
+  }
+
+  .kodecamp-logos p {
+    margin-left: 0px;
+  }
+
+  .share-mobile {
+    display: block;
+    position: absolute;
+    right: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 4px 4px 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+}
