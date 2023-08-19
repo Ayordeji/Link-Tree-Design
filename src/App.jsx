@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import ASD from "../images/KodeHauz Logo 1.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,7 +21,8 @@ function App() {
         </div>
 
         <div class="profile">
-          <img src="images/profile__img.png" alt="" srcset="" />
+          <img src={AD} alt="" srcset="" />
+
           <h1>John Doe</h1>
         </div>
         <div class="links">
@@ -38,7 +40,7 @@ function App() {
           <a href="#">Design books</a>
         </div>
         <div class="social">
-          <img src="./images/slack.png" alt="" srcset="" />
+          <img src={require("./images/slack.png")} alt="" srcset="" />
           <a href="https://github.com/Ayordeji">
             <img src="./images/Social icon.png" alt="" srcset="" />
           </a>
@@ -49,7 +51,7 @@ function App() {
             <img src="./images/kodecamp logo white 2.png" alt="" srcset="" />
           </span>
           <p>KodeCamp Internship Task</p>
-          <img src="./images/KodeHauz Logo 1.png" alt="" srcset="" />
+          <img src={ASD} alt="" srcset="" />
         </div>
       </div>
     </>
