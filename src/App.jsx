@@ -1,6 +1,13 @@
 import { useState } from "react";
+import SHARE from "./img/share-06.png";
+import SHAREMOBILE from "./img/dots-horizontal.png";
+import PROFILE from "./img/profile__img.png";
+import SLACK from "./img/slack.png";
+import GITHUB from "./img/Social icon.png";
+import KODECAMP from "./img/kodecamp logo white 2.png";
+import KODEHAUZ from "./img/KodeHauz Logo 1.png";
+
 import "./App.css";
-import ASD from "../images/KodeHauz Logo 1.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,19 +17,18 @@ function App() {
       <div class="container">
         <div class="share">
           <a href="https://ayodejieluyemi.great-site.net/">
-            <img src="../images/share-06.png" alt="" srcset="" />
+            <img src={SHARE} alt="" srcset="" />
           </a>
         </div>
 
         <div class="share-mobile">
           <a href="https://ayodejieluyemi.great-site.net/">
-            <img src="../images/dots-horizontal.png" alt="" srcset="" />
+            <img src={SHAREMOBILE} alt="" srcset="" />
           </a>
         </div>
 
         <div class="profile">
-          <img src={AD} alt="" srcset="" />
-
+          <img src={PROFILE} alt="" srcset="" />
           <h1>John Doe</h1>
         </div>
         <div class="links">
@@ -40,18 +46,18 @@ function App() {
           <a href="#">Design books</a>
         </div>
         <div class="social">
-          <img src={require("./images/slack.png")} alt="" srcset="" />
+          <img src={SLACK} alt="" srcset="" />
           <a href="https://github.com/Ayordeji">
-            <img src="./images/Social icon.png" alt="" srcset="" />
+            <img src={GITHUB} alt="" srcset="" />
           </a>
         </div>
         <hr />
         <div class="kodecamp-logos">
           <span class="special">
-            <img src="./images/kodecamp logo white 2.png" alt="" srcset="" />
+            <img src={KODECAMP} alt="" srcset="" />
           </span>
           <p>KodeCamp Internship Task</p>
-          <img src={ASD} alt="" srcset="" />
+          <img src={KODEHAUZ} alt="" srcset="" />
         </div>
       </div>
     </>
